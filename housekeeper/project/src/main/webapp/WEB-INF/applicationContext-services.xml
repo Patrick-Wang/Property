@@ -21,7 +21,7 @@
 	<!-- DATABASE -->
 	<!-- -->
 	<bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
-		<property name="jndiName" value="java:comp/env/jdbc/speed_db_oracle" />
+		<property name="jndiName" value="java:comp/env/jdbc/housekeeper" />
 	</bean>
 
 	<bean id="entityManagerFactory"
@@ -39,7 +39,7 @@
 				<property name="showSql" value="true" />
 			</bean>
 		</property>
-		<property name="persistenceUnitName" value="localDB" />
+		<property name="persistenceUnitName" value="local_DB" />
 	</bean>
 	
 	<bean class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor" />
